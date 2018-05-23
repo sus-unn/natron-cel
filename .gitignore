@@ -1,0 +1,7 @@
+# .gitignore
+
+*.kra
+*.kra~
+*.png~
+*.pyc
+__pycache__/
