@@ -42,7 +42,7 @@ def createInstance(app,group):
 
     # Create the user parameters
     lastNode.Controls = lastNode.createPageParam("Controls", "Controls")
-    param = lastNode.createColorParam("KeyColorIDKEYparamValueVec40", "Key Color", True)
+    param = lastNode.createColorParam("KeyColorIDKEYparamValueVec40", "Col 1", True)
 
     # Add the param to the page
     lastNode.Controls.addParam(param)
@@ -51,11 +51,73 @@ def createInstance(app,group):
     param.setHelp("Color to seperate from image.")
     param.setAddNewLine(True)
     param.setAnimationEnabled(True)
-    param.setValue(0.3762621283531189, 0)
-    param.setValue(0.3419144153594971, 1)
-    param.setValue(0.2345506399869919, 2)
-    param.setValue(1, 3)
     lastNode.KeyColorIDKEYparamValueVec40 = param
+    del param
+
+    param = lastNode.createColorParam("KeyColorIDKEYparamValueVec41", "Col 2", True)
+
+    # Add the param to the page
+    lastNode.Controls.addParam(param)
+
+    # Set param properties
+    param.setAddNewLine(True)
+    param.setAnimationEnabled(True)
+    lastNode.KeyColorIDKEYparamValueVec41 = param
+    del param
+
+    param = lastNode.createColorParam("KeyColorIDKEYparamValueVec42", "Col 3", True)
+
+    # Add the param to the page
+    lastNode.Controls.addParam(param)
+
+    # Set param properties
+    param.setAddNewLine(True)
+    param.setAnimationEnabled(True)
+    lastNode.KeyColorIDKEYparamValueVec42 = param
+    del param
+
+    param = lastNode.createColorParam("KeyColorIDKEYparamValueVec43", "Col 4", True)
+
+    # Add the param to the page
+    lastNode.Controls.addParam(param)
+
+    # Set param properties
+    param.setAddNewLine(True)
+    param.setAnimationEnabled(True)
+    lastNode.KeyColorIDKEYparamValueVec43 = param
+    del param
+
+    param = lastNode.createColorParam("KeyColorIDKEYparamValueVec44", "Col 5", True)
+
+    # Add the param to the page
+    lastNode.Controls.addParam(param)
+
+    # Set param properties
+    param.setAddNewLine(True)
+    param.setAnimationEnabled(True)
+    lastNode.KeyColorIDKEYparamValueVec44 = param
+    del param
+
+    param = lastNode.createColorParam("KeyColorIDKEYparamValueVec45", "Col 6", True)
+
+    # Add the param to the page
+    lastNode.Controls.addParam(param)
+
+    # Set param properties
+    param.setAddNewLine(True)
+    param.setAnimationEnabled(True)
+    lastNode.KeyColorIDKEYparamValueVec45 = param
+    del param
+
+    param = lastNode.createColorParam("KeyColorIDKEYparamValueVec46", "Col 7", True)
+
+    # Add the param to the page
+    lastNode.Controls.addParam(param)
+
+    # Set param properties
+    param.setAddNewLine(True)
+    param.setAnimationEnabled(True)
+    lastNode.KeyColorIDKEYparamValueVec46 = param
     del param
 
     # Refresh the GUI with the newly created parameters
@@ -90,6 +152,11 @@ def createInstance(app,group):
     param = lastNode.getParam("BChannelsA")
     if param is not None:
         param.setValue(False)
+        del param
+
+    param = lastNode.getParam("userTextArea")
+    if param is not None:
+        param.setValue("<Natron>(over)</Natron>")
         del param
 
     param = lastNode.getParam("enableMask_Mask")
@@ -190,10 +257,10 @@ def createInstance(app,group):
     param.setHelp("")
     param.setAddNewLine(True)
     param.setAnimationEnabled(True)
-    param.setValue(0.3762621283531189, 0)
-    param.setValue(0.3419144153594971, 1)
-    param.setValue(0.2345506399869919, 2)
-    param.setValue(1, 3)
+    param.setValue(0, 0)
+    param.setValue(0, 1)
+    param.setValue(0, 2)
+    param.setValue(0, 3)
     param.setEnabled(False, 0)
     param.setEnabled(False, 1)
     param.setEnabled(False, 2)
@@ -210,6 +277,14 @@ def createInstance(app,group):
     param.setHelp("")
     param.setAddNewLine(True)
     param.setAnimationEnabled(True)
+    param.setValue(0, 0)
+    param.setValue(0, 1)
+    param.setValue(0, 2)
+    param.setValue(0, 3)
+    param.setEnabled(False, 0)
+    param.setEnabled(False, 1)
+    param.setEnabled(False, 2)
+    param.setEnabled(False, 3)
     lastNode.IDKEYparamValueVec41 = param
     del param
 
@@ -222,6 +297,10 @@ def createInstance(app,group):
     param.setHelp("")
     param.setAddNewLine(True)
     param.setAnimationEnabled(True)
+    param.setEnabled(False, 0)
+    param.setEnabled(False, 1)
+    param.setEnabled(False, 2)
+    param.setEnabled(False, 3)
     lastNode.IDKEYparamValueVec42 = param
     del param
 
@@ -234,6 +313,10 @@ def createInstance(app,group):
     param.setHelp("")
     param.setAddNewLine(True)
     param.setAnimationEnabled(True)
+    param.setEnabled(False, 0)
+    param.setEnabled(False, 1)
+    param.setEnabled(False, 2)
+    param.setEnabled(False, 3)
     lastNode.IDKEYparamValueVec43 = param
     del param
 
@@ -246,6 +329,10 @@ def createInstance(app,group):
     param.setHelp("")
     param.setAddNewLine(True)
     param.setAnimationEnabled(True)
+    param.setEnabled(False, 0)
+    param.setEnabled(False, 1)
+    param.setEnabled(False, 2)
+    param.setEnabled(False, 3)
     lastNode.IDKEYparamValueVec44 = param
     del param
 
@@ -258,6 +345,10 @@ def createInstance(app,group):
     param.setHelp("")
     param.setAddNewLine(True)
     param.setAnimationEnabled(True)
+    param.setEnabled(False, 0)
+    param.setEnabled(False, 1)
+    param.setEnabled(False, 2)
+    param.setEnabled(False, 3)
     lastNode.IDKEYparamValueVec45 = param
     del param
 
@@ -270,6 +361,10 @@ def createInstance(app,group):
     param.setHelp("")
     param.setAddNewLine(True)
     param.setAnimationEnabled(True)
+    param.setEnabled(False, 0)
+    param.setEnabled(False, 1)
+    param.setEnabled(False, 2)
+    param.setEnabled(False, 3)
     lastNode.IDKEYparamValueVec46 = param
     del param
 
@@ -368,10 +463,10 @@ def createInstance(app,group):
     param.setHelp("")
     param.setAddNewLine(True)
     param.setAnimationEnabled(True)
-    param.setValue(0.3762621283531189, 0)
-    param.setValue(0.3419144153594971, 1)
-    param.setValue(0.2345506399869919, 2)
-    param.setValue(1, 3)
+    param.setValue(0, 0)
+    param.setValue(0, 1)
+    param.setValue(0, 2)
+    param.setValue(0, 3)
     param.setEnabled(False, 0)
     param.setEnabled(False, 1)
     param.setEnabled(False, 2)
@@ -388,6 +483,14 @@ def createInstance(app,group):
     param.setHelp("")
     param.setAddNewLine(True)
     param.setAnimationEnabled(True)
+    param.setValue(0, 0)
+    param.setValue(0, 1)
+    param.setValue(0, 2)
+    param.setValue(0, 3)
+    param.setEnabled(False, 0)
+    param.setEnabled(False, 1)
+    param.setEnabled(False, 2)
+    param.setEnabled(False, 3)
     lastNode.IDKEYparamValueVec41 = param
     del param
 
@@ -400,6 +503,10 @@ def createInstance(app,group):
     param.setHelp("")
     param.setAddNewLine(True)
     param.setAnimationEnabled(True)
+    param.setEnabled(False, 0)
+    param.setEnabled(False, 1)
+    param.setEnabled(False, 2)
+    param.setEnabled(False, 3)
     lastNode.IDKEYparamValueVec42 = param
     del param
 
@@ -412,6 +519,10 @@ def createInstance(app,group):
     param.setHelp("")
     param.setAddNewLine(True)
     param.setAnimationEnabled(True)
+    param.setEnabled(False, 0)
+    param.setEnabled(False, 1)
+    param.setEnabled(False, 2)
+    param.setEnabled(False, 3)
     lastNode.IDKEYparamValueVec43 = param
     del param
 
@@ -424,6 +535,10 @@ def createInstance(app,group):
     param.setHelp("")
     param.setAddNewLine(True)
     param.setAnimationEnabled(True)
+    param.setEnabled(False, 0)
+    param.setEnabled(False, 1)
+    param.setEnabled(False, 2)
+    param.setEnabled(False, 3)
     lastNode.IDKEYparamValueVec44 = param
     del param
 
@@ -436,6 +551,10 @@ def createInstance(app,group):
     param.setHelp("")
     param.setAddNewLine(True)
     param.setAnimationEnabled(True)
+    param.setEnabled(False, 0)
+    param.setEnabled(False, 1)
+    param.setEnabled(False, 2)
+    param.setEnabled(False, 3)
     lastNode.IDKEYparamValueVec45 = param
     del param
 
@@ -448,6 +567,10 @@ def createInstance(app,group):
     param.setHelp("")
     param.setAddNewLine(True)
     param.setAnimationEnabled(True)
+    param.setEnabled(False, 0)
+    param.setEnabled(False, 1)
+    param.setEnabled(False, 2)
+    param.setEnabled(False, 3)
     lastNode.IDKEYparamValueVec46 = param
     del param
 
@@ -544,10 +667,10 @@ def createInstance(app,group):
 
     param = lastNode.getParam("paramValueVec40")
     if param is not None:
-        param.setValue(0.3762621283531189, 0)
-        param.setValue(0.3419144153594971, 1)
-        param.setValue(0.2345506399869919, 2)
-        param.setValue(1, 3)
+        param.setValue(0, 0)
+        param.setValue(0, 1)
+        param.setValue(0, 2)
+        param.setValue(0, 3)
         del param
 
     param = lastNode.getParam("paramValueVec41")
@@ -885,6 +1008,369 @@ def createInstance(app,group):
     del lastNode
     # End of node "Dot1"
 
+    # Start of node "Shadertoy1"
+    lastNode = app.createNode("net.sf.openfx.Shadertoy", 1, groupgroup)
+    lastNode.setScriptName("Shadertoy1")
+    lastNode.setLabel("IDKEY")
+    lastNode.setPosition(1760, 1578)
+    lastNode.setSize(80, 43)
+    lastNode.setColor(0.3, 0.5, 0.2)
+    groupgroupShadertoy1 = lastNode
+
+    param = lastNode.getParam("mousePosition")
+    if param is not None:
+        param.setValue(0, 0)
+        del param
+
+    param = lastNode.getParam("paramValueVec30")
+    if param is not None:
+        param.setValue(1, 0)
+        param.setValue(0.068035848, 2)
+        del param
+
+    param = lastNode.getParam("paramValueVec40")
+    if param is not None:
+        param.setValue(0, 0)
+        param.setValue(0, 1)
+        param.setValue(0, 2)
+        param.setValue(0, 3)
+        del param
+
+    param = lastNode.getParam("paramValueVec41")
+    if param is not None:
+        param.setValue(0, 0)
+        param.setValue(0, 1)
+        param.setValue(0, 2)
+        param.setValue(0, 3)
+        del param
+
+    param = lastNode.getParam("paramValueVec42")
+    if param is not None:
+        param.setValue(0, 0)
+        param.setValue(0, 1)
+        param.setValue(0, 2)
+        param.setValue(0, 3)
+        del param
+
+    param = lastNode.getParam("paramValueVec43")
+    if param is not None:
+        param.setValue(0, 0)
+        param.setValue(0, 1)
+        param.setValue(0, 2)
+        param.setValue(0, 3)
+        del param
+
+    param = lastNode.getParam("paramValueVec44")
+    if param is not None:
+        param.setValue(0, 0)
+        param.setValue(0, 1)
+        param.setValue(0, 2)
+        param.setValue(0, 3)
+        del param
+
+    param = lastNode.getParam("paramValueVec45")
+    if param is not None:
+        param.setValue(0, 0)
+        param.setValue(0, 1)
+        param.setValue(0, 2)
+        param.setValue(0, 3)
+        del param
+
+    param = lastNode.getParam("paramValueVec46")
+    if param is not None:
+        param.setValue(0, 0)
+        param.setValue(0, 1)
+        param.setValue(0, 2)
+        param.setValue(0, 3)
+        del param
+
+    param = lastNode.getParam("imageShaderPresetDir")
+    if param is not None:
+        param.setValue("")
+        del param
+
+    param = lastNode.getParam("imageShaderSource")
+    if param is not None:
+        param.setValue("uniform\tvec4 colA=vec4(0.0,0.0,0.0,0.0);\nuniform\tvec4 colB=vec4(0.0,0.0,0.0,0.0);\nuniform\tvec4 colC=vec4(0.0,0.0,0.0,0.0);\nuniform\tvec4 colD=vec4(0.0,0.0,0.0,0.0);\nuniform\tvec4 colE=vec4(0.0,0.0,0.0,0.0);\nuniform\tvec4 colF=vec4(0.0,0.0,0.0,0.0);\nuniform\tvec4 colG=vec4(0.0,0.0,0.0,0.0);\n\nbool check(in vec3 src, in vec3 tgt)\n  {\n  int chk = 0;\n  bool ret = false ;\n  if (src.r <= tgt.r+iMouse.x){\n    if (src.r >= tgt.r-iMouse.x){\n      chk += 1;};};\n  if (src.g <= tgt.g+iMouse.x){\n    if (src.g >= tgt.g-iMouse.x){\n      chk += 1;};};\n  if (src.b <= tgt.b+iMouse.x){\n    if (src.b >= tgt.b-iMouse.x){\n      chk += 1;};};\n  if (chk == 3){ret=true;};\n  return ret ;\n  }\n\nvoid mainImage( out vec4 fragColor, in vec2 fragCoord )\n{\n  float A = 0.0;\n  vec3 col = texture2D(iChannel0, fragCoord.xy / iResolution.xy).rgb;\n\nif (colA != vec4(0.0,0.0,0.0,0.0)){\n  if (check(colA.rgb,col.rgb) == true){A=1.0;};};\n\nif (colB != vec4(0.0,0.0,0.0,0.0)){\n  if (check(colB.rgb,col.rgb) == true){A=1.0;};};\n\nif (colC != vec4(0.0,0.0,0.0,0.0)){\n  if (check(colC.rgb,col.rgb) == true){A=1.0;};};\n\nif (colD != vec4(0.0,0.0,0.0,0.0)){\n  if (check(colD.rgb,col.rgb) == true){A=1.0;};};\n\nif (colE != vec4(0.0,0.0,0.0,0.0)){\n  if (check(colE.rgb,col.rgb) == true){A=1.0;};};\n\nif (colF != vec4(0.0,0.0,0.0,0.0)){\n  if (check(colF.rgb,col.rgb) == true){A=1.0;};};\n\nif (colG != vec4(0.0,0.0,0.0,0.0)){\n  if (check(colG.rgb,col.rgb) == true){A=1.0;};};\n    \n\n  fragColor = vec4(col.xyz,A);\n}\n")
+        del param
+
+    param = lastNode.getParam("mipmap0")
+    if param is not None:
+        param.set("linear")
+        del param
+
+    param = lastNode.getParam("wrap0")
+    if param is not None:
+        param.set("clamp")
+        del param
+
+    param = lastNode.getParam("inputEnable1")
+    if param is not None:
+        param.setValue(False)
+        del param
+
+    param = lastNode.getParam("inputEnable2")
+    if param is not None:
+        param.setValue(False)
+        del param
+
+    param = lastNode.getParam("inputEnable3")
+    if param is not None:
+        param.setValue(False)
+        del param
+
+    param = lastNode.getParam("bbox")
+    if param is not None:
+        param.set("iChannel0")
+        del param
+
+    param = lastNode.getParam("NatronParamFormatChoice")
+    if param is not None:
+        param.set("PC_Video")
+        del param
+
+    param = lastNode.getParam("paramCount")
+    if param is not None:
+        param.setValue(7, 0)
+        del param
+
+    param = lastNode.getParam("paramType0")
+    if param is not None:
+        param.set("vec4")
+        del param
+
+    param = lastNode.getParam("paramName0")
+    if param is not None:
+        param.setValue("colA")
+        del param
+
+    param = lastNode.getParam("paramLabel0")
+    if param is not None:
+        param.setValue("colA")
+        del param
+
+    param = lastNode.getParam("paramType1")
+    if param is not None:
+        param.set("vec4")
+        del param
+
+    param = lastNode.getParam("paramName1")
+    if param is not None:
+        param.setValue("colB")
+        del param
+
+    param = lastNode.getParam("paramLabel1")
+    if param is not None:
+        param.setValue("colB")
+        del param
+
+    param = lastNode.getParam("paramType2")
+    if param is not None:
+        param.set("vec4")
+        del param
+
+    param = lastNode.getParam("paramName2")
+    if param is not None:
+        param.setValue("colC")
+        del param
+
+    param = lastNode.getParam("paramLabel2")
+    if param is not None:
+        param.setValue("colC")
+        del param
+
+    param = lastNode.getParam("paramType3")
+    if param is not None:
+        param.set("vec4")
+        del param
+
+    param = lastNode.getParam("paramName3")
+    if param is not None:
+        param.setValue("colD")
+        del param
+
+    param = lastNode.getParam("paramLabel3")
+    if param is not None:
+        param.setValue("colD")
+        del param
+
+    param = lastNode.getParam("paramType4")
+    if param is not None:
+        param.set("vec4")
+        del param
+
+    param = lastNode.getParam("paramName4")
+    if param is not None:
+        param.setValue("colE")
+        del param
+
+    param = lastNode.getParam("paramLabel4")
+    if param is not None:
+        param.setValue("colE")
+        del param
+
+    param = lastNode.getParam("paramType5")
+    if param is not None:
+        param.set("vec4")
+        del param
+
+    param = lastNode.getParam("paramName5")
+    if param is not None:
+        param.setValue("colF")
+        del param
+
+    param = lastNode.getParam("paramLabel5")
+    if param is not None:
+        param.setValue("colF")
+        del param
+
+    param = lastNode.getParam("paramType6")
+    if param is not None:
+        param.set("vec4")
+        del param
+
+    param = lastNode.getParam("paramName6")
+    if param is not None:
+        param.setValue("colG")
+        del param
+
+    param = lastNode.getParam("paramLabel6")
+    if param is not None:
+        param.setValue("colG")
+        del param
+
+    del lastNode
+    # End of node "Shadertoy1"
+
+    # Start of node "Input1"
+    lastNode = app.createNode("fr.inria.built-in.Input", 1, groupgroup)
+    lastNode.setScriptName("Input1")
+    lastNode.setLabel("ID_Pass")
+    lastNode.setPosition(1487, 1578)
+    lastNode.setSize(104, 43)
+    lastNode.setColor(0.3, 0.5, 0.2)
+    groupgroupInput1 = lastNode
+
+    del lastNode
+    # End of node "Input1"
+
+    # Start of node "Output2"
+    lastNode = app.createNode("fr.inria.built-in.Output", 1, groupgroup)
+    lastNode.setLabel("Output1")
+    lastNode.setPosition(1747, 1992)
+    lastNode.setSize(104, 31)
+    lastNode.setColor(0.7, 0.7, 0.7)
+    groupgroupOutput2 = lastNode
+
+    del lastNode
+    # End of node "Output2"
+
+    # Start of node "Shuffle1"
+    lastNode = app.createNode("net.sf.openfx.ShufflePlugin", 2, groupgroup)
+    lastNode.setScriptName("Shuffle1")
+    lastNode.setLabel("Shuffle")
+    lastNode.setPosition(1748, 1844)
+    lastNode.setSize(104, 43)
+    lastNode.setColor(0.6, 0.24, 0.39)
+    groupgroupShuffle1 = lastNode
+
+    param = lastNode.getParam("disableNode")
+    if param is not None:
+        param.setValue(True)
+        del param
+
+    del lastNode
+    # End of node "Shuffle1"
+
+    # Start of node "Merge1"
+    lastNode = app.createNode("net.sf.openfx.MergePlugin", 1, groupgroup)
+    lastNode.setScriptName("Merge1")
+    lastNode.setLabel("Cumulate Alpha")
+    lastNode.setPosition(1748, 1692)
+    lastNode.setSize(104, 52)
+    lastNode.setColor(0.3, 0.37, 0.776)
+    groupgroupMerge1 = lastNode
+
+    param = lastNode.getParam("operation")
+    if param is not None:
+        param.set("screen")
+        del param
+
+    param = lastNode.getParam("AChannelsR")
+    if param is not None:
+        param.setValue(False)
+        del param
+
+    param = lastNode.getParam("AChannelsG")
+    if param is not None:
+        param.setValue(False)
+        del param
+
+    param = lastNode.getParam("AChannelsB")
+    if param is not None:
+        param.setValue(False)
+        del param
+
+    param = lastNode.getParam("BChannelsR")
+    if param is not None:
+        param.setValue(False)
+        del param
+
+    param = lastNode.getParam("BChannelsG")
+    if param is not None:
+        param.setValue(False)
+        del param
+
+    param = lastNode.getParam("BChannelsB")
+    if param is not None:
+        param.setValue(False)
+        del param
+
+    param = lastNode.getParam("OutputChannelsR")
+    if param is not None:
+        param.setValue(False)
+        del param
+
+    param = lastNode.getParam("OutputChannelsG")
+    if param is not None:
+        param.setValue(False)
+        del param
+
+    param = lastNode.getParam("OutputChannelsB")
+    if param is not None:
+        param.setValue(False)
+        del param
+
+    param = lastNode.getParam("aChannelsChanged")
+    if param is not None:
+        param.setValue(True)
+        del param
+
+    param = lastNode.getParam("userTextArea")
+    if param is not None:
+        param.setValue("<Natron>(screen)</Natron>")
+        del param
+
+    param = lastNode.getParam("disableNode")
+    if param is not None:
+        param.setValue(True)
+        del param
+
+    del lastNode
+    # End of node "Merge1"
+
+    # Start of node "Dot2"
+    lastNode = app.createNode("fr.inria.built-in.Dot", 1, groupgroup)
+    lastNode.setScriptName("Dot2")
+    lastNode.setLabel("Dot1")
+    lastNode.setPosition(1532, 1713)
+    lastNode.setSize(15, 15)
+    lastNode.setColor(0.7, 0.7, 0.7)
+    groupgroupDot2 = lastNode
+
+    del lastNode
+    # End of node "Dot2"
+
     # Now that all nodes are created we can connect them together, restore expressions
     groupgroupIDKEY.connectInput(0, groupgroupID_Pass)
     groupgroupOutput1.connectInput(0, groupgroupShuffle)
@@ -892,6 +1378,12 @@ def createInstance(app,group):
     groupgroupCumulate_Alpha.connectInput(0, groupgroupIDKEY)
     groupgroupCumulate_Alpha.connectInput(1, groupgroupDot1)
     groupgroupDot1.connectInput(0, groupgroupID_Pass)
+    groupgroupShadertoy1.connectInput(0, groupgroupInput1)
+    groupgroupOutput2.connectInput(0, groupgroupShuffle1)
+    groupgroupShuffle1.connectInput(1, groupgroupMerge1)
+    groupgroupMerge1.connectInput(0, groupgroupShadertoy1)
+    groupgroupMerge1.connectInput(1, groupgroupDot2)
+    groupgroupDot2.connectInput(0, groupgroupInput1)
 
     param = groupgroupIDKEY.getParam("mousePosition")
     param.setExpression("thisGroup.tol.get()", False, 0)
@@ -923,9 +1415,57 @@ def createInstance(app,group):
     param = groupgroupCumulate_Alpha.getParam("disableNode")
     param.setExpression("1-thisGroup.cumulate.get()", False, 0)
     del param
+    param = groupgroupShadertoy1.getParam("mousePosition")
+    param.setExpression("thisGroup.tol.get()", False, 0)
+    del param
+    param = groupgroupShadertoy1.getParam("paramValueVec40")
+    groupgroup.getParam("IDKEYparamValueVec40").setAsAlias(param)
+    del param
+    param = groupgroupShadertoy1.getParam("paramValueVec41")
+    groupgroup.getParam("IDKEYparamValueVec41").setAsAlias(param)
+    del param
+    param = groupgroupShadertoy1.getParam("paramValueVec42")
+    groupgroup.getParam("IDKEYparamValueVec42").setAsAlias(param)
+    del param
+    param = groupgroupShadertoy1.getParam("paramValueVec43")
+    groupgroup.getParam("IDKEYparamValueVec43").setAsAlias(param)
+    del param
+    param = groupgroupShadertoy1.getParam("paramValueVec44")
+    groupgroup.getParam("IDKEYparamValueVec44").setAsAlias(param)
+    del param
+    param = groupgroupShadertoy1.getParam("paramValueVec45")
+    groupgroup.getParam("IDKEYparamValueVec45").setAsAlias(param)
+    del param
+    param = groupgroupShadertoy1.getParam("paramValueVec46")
+    groupgroup.getParam("IDKEYparamValueVec46").setAsAlias(param)
+    del param
+    param = groupgroupShuffle1.getParam("disableNode")
+    param.setExpression("1-thisGroup.alphaout.get()", False, 0)
+    del param
+    param = groupgroupMerge1.getParam("disableNode")
+    param.setExpression("1-thisGroup.cumulate.get()", False, 0)
+    del param
 
     param = groupgroup.getParam("IDKEYparamValueVec40")
     group.getParam("KeyColorIDKEYparamValueVec40").setAsAlias(param)
+    del param
+    param = groupgroup.getParam("IDKEYparamValueVec41")
+    group.getParam("KeyColorIDKEYparamValueVec41").setAsAlias(param)
+    del param
+    param = groupgroup.getParam("IDKEYparamValueVec42")
+    group.getParam("KeyColorIDKEYparamValueVec42").setAsAlias(param)
+    del param
+    param = groupgroup.getParam("IDKEYparamValueVec43")
+    group.getParam("KeyColorIDKEYparamValueVec43").setAsAlias(param)
+    del param
+    param = groupgroup.getParam("IDKEYparamValueVec44")
+    group.getParam("KeyColorIDKEYparamValueVec44").setAsAlias(param)
+    del param
+    param = groupgroup.getParam("IDKEYparamValueVec45")
+    group.getParam("KeyColorIDKEYparamValueVec45").setAsAlias(param)
+    del param
+    param = groupgroup.getParam("IDKEYparamValueVec46")
+    group.getParam("KeyColorIDKEYparamValueVec46").setAsAlias(param)
     del param
 
     # Start of node "_Empty"
@@ -991,6 +1531,24 @@ def createInstance(app,group):
 
     param = groupKeyColor.getParam("IDKEYparamValueVec40")
     group.getParam("KeyColorIDKEYparamValueVec40").setAsAlias(param)
+    del param
+    param = groupKeyColor.getParam("IDKEYparamValueVec41")
+    group.getParam("KeyColorIDKEYparamValueVec41").setAsAlias(param)
+    del param
+    param = groupKeyColor.getParam("IDKEYparamValueVec42")
+    group.getParam("KeyColorIDKEYparamValueVec42").setAsAlias(param)
+    del param
+    param = groupKeyColor.getParam("IDKEYparamValueVec43")
+    group.getParam("KeyColorIDKEYparamValueVec43").setAsAlias(param)
+    del param
+    param = groupKeyColor.getParam("IDKEYparamValueVec44")
+    group.getParam("KeyColorIDKEYparamValueVec44").setAsAlias(param)
+    del param
+    param = groupKeyColor.getParam("IDKEYparamValueVec45")
+    group.getParam("KeyColorIDKEYparamValueVec45").setAsAlias(param)
+    del param
+    param = groupKeyColor.getParam("IDKEYparamValueVec46")
+    group.getParam("KeyColorIDKEYparamValueVec46").setAsAlias(param)
     del param
 
     try:
