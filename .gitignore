@@ -4,4 +4,6 @@
 *.kra~
 *.png~
 *.pyc
+*.ntp
+*.lock
 __pycache__/
