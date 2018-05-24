@@ -6,4 +6,5 @@
 *.pyc
 *.ntp
 *.lock
+*.autosave
 __pycache__/
