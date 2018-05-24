@@ -18,3 +18,11 @@ To install Natron-cel, the method is same as explained above, download natron-ce
 ```
 Edit > Preferences > PyPlugs Search Path > Add
 ```
+## Using Natron-cel
+There are two nodes provided with Natron-cel currently: 'celsep' and 'celkey'.
+
+- 'celsep' will seperate certain color(s) from input and erase everything else.
+
+- 'celkey' will erase only certain color(s) from input.
+
+- No other options for these nodes for simplicity.
